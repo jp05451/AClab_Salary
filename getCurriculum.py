@@ -51,6 +51,8 @@ def curriculum(id: str, passwd: str):
         
         classList=readCurriculumTable(table)
 
+        output=open("curriculum.txt",mode="w")
+        
         for row in classList:      
             print(row)
         browser.close()
